@@ -97,7 +97,7 @@ router.post("/offer/publish", isAuthenticated, async (req, res) => {
 //
 //});
 
-router.get("/offres", async (req, res) => {
+router.get("/offers", async (req, res) => {
   try {
     const offers = await Offer.find({
       product_name: new RegExp(req.query.title, "i"),
